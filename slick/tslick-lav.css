@@ -1,0 +1,48 @@
+/*esto es el slide nuevo*/
+  * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*.slick-slide {
+      margin: 0px 20px;
+    }*/
+
+    .slick-slide img {
+      width: 100%;
+    }
+/* iconos del slide*/
+/*esto es para que dejen de verse en pantalla y cuando cambie de tamaño la pantalla
+no tomen espacio extra haciendo que la plantilla no encaje en la pantalla y de un margen exttra*/
+.slick-prev:before,
+.slick-next:before
+{
+    display:none;
+}
+
+
+
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: blue;
+    }
+
+    .slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+}
+.slick-next {
+    right: -50px;
+}
+.slick-prev {
+    left: -50px;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 50px;
+   
+}

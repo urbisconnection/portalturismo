@@ -1,0 +1,195 @@
+
+/* ELEMENTOs GLOBALES
+----------------------------------------------------*/
+h6{
+  line-height: 20px;
+}
+
+/* ELEMENTO ESPECIAL
+--------------------------------------------------*/
+.flotante{
+  position: absolute;
+  width: 90%;
+  top: 10%;
+  left: 5%;
+}
+/* EVENTOS
+--------------------------------------------------*/
+.eventos{
+  background-color: #fff;
+  margin-bottom: 3rem;
+  visibility: collapse;
+}
+.eventos h1{
+ text-align: center;
+ text-transform: uppercase;
+ padding:  10px 0
+}
+.fecha{
+  border:1px solid #ccc;
+  border-radius: 10px;
+}
+
+.margen-interno{
+  padding: 5px;
+  border-bottom: 1px solid #000;
+}
+.margen-interno h1{
+  line-height: 50px;
+  padding: 5px;
+}
+.margen-interno h4, .margen-interno p,.margen-interno small{
+  margin-bottom: 0;
+}
+/* CATEGORIAS
+--------------------------------------------------*/
+.categorias{
+  background-color: #333;
+ /* height: 5rem;*/
+  padding: 0.5rem;
+}
+.categorias a{
+  color: #888;
+}
+.categorias a:hover{
+  color: #999;
+}
+.categorias a::before{
+  font-family: "FontAwesome", sans-serif;
+  content: "\f1db";
+}
+.categorias a:active::before{
+  font-family: "FontAwesome", sans-serif;
+  content: "\f111";
+}
+.btn-secondary.active::before, .btn-secondary:active::before, .show>.btn-secondary.dropdown-toggle {
+  font-family: "FontAwesome", sans-serif;
+  content: "\f111";
+}
+.btn-categorias{
+  background-color: #ccc;
+  margin: 0.5rem;
+  border-color: #ccc;
+}
+/*star rating estilo*/
+.rating-md {
+    font-size: 1em !important;
+}
+
+/* estilos de las imagenes sin comentarios*/
+.portfolio-item{
+  margin-bottom: 30px;
+}
+/*estilo de las imagenes con comentarios*/
+
+.col-item
+{
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    background: #FFF;
+    margin-bottom: 30px;
+}
+.col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-item .info
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+
+.col-item:hover .info {
+    background-color: #F5F5DC;
+}
+.col-item .price
+{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.col-item .price h6
+{
+   /* line-height: 20px;*/
+    margin: 0;
+}
+
+.price-text-color
+{
+    color: #219FD1;
+    font-size: 16px;
+    line-height: 18px;
+    font-style: italic;
+}
+
+.col-item .info .rating
+{
+    color: #777;
+}
+
+.col-item .rating
+{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.col-item .separator
+{
+    border-top: 1px solid #E1E1E1;
+}
+
+.clear-left
+{
+    clear: left;
+}
+
+.col-item .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-item .separator p i
+{
+    margin-right: 5px;
+}
+.col-item .btn-add
+{
+    width: 50%;
+    float: left;
+}
+
+.col-item .btn-add
+{
+    border-right: 1px solid #E1E1E1;
+}
+
+.col-item .btn-details
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+
+@media (min-width: 768px){
+.flotante{
+  position: absolute;
+  width: 70%;
+  top: 10%;
+  left: 15%;
+}
+.eventos{
+  visibility: visible;
+  }
+}
