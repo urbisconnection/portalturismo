@@ -1,195 +1,265 @@
-
-/* ELEMENTOs GLOBALES
-----------------------------------------------------*/
-h6{
-  line-height: 20px;
+:root {
+    --color1: #1ab940;
+    --color2: #668095;
+    --color3: #3FA9F5;
 }
 
-/* ELEMENTO ESPECIAL
---------------------------------------------------*/
-.flotante{
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(245, 248, 255);
+    line-height: 1.3;
+    font-size: 0.8rem;
+}
+
+/*================================================================
+ESTILOS DE TEXTO*/
+h1 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-wei  ght: 400;
+    color: #668095;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+h5 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--color1);
+}
+
+.parrafo-detalle{
+    color: var(--color2);
+}
+/*================================================================
+ESTILOS DE INICIO*/
+.navbar{
+  padding: 0.6rem 1rem 1rem;
+}
+/*inicio estilos del banner*/
+.banner{
+/* importante */
+  background-size: cover;
+/* Ubicación de la imagen */
+  background-image: url(../images/muestra.jpg);
+  /* Nos aseguramos que la imagen de fondo este centrada vertical y
+    horizontalmente en todo momento */
+  background-position: center center;
+  /* La imagen de fondo no se repite */
+  background-repeat: no-repeat;
+  /* La imagen de fondo está fija en el viewport, de modo que no se mueva cuando
+     la altura del contenido supere la altura de la imagen. */
+  background-attachment: fixed;
+  /* La imagen de fondo se reescala cuando se cambia el ancho de ventana
+     del navegador */
+  background-size: cover;
+  /* Fijamos un color de fondo para que se muestre mientras se está
+    cargando la imagen de fondo o si hay problemas para cargarla  */
+  background-color: #464646;
+}
+
+.container-nuevo{
   position: absolute;
-  width: 90%;
-  top: 10%;
-  left: 5%;
+  width: 100%;
+  height: 100%;
+    /*background-color: #0099FF;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
 }
-/* EVENTOS
---------------------------------------------------*/
-.eventos{
-  background-color: #fff;
-  margin-bottom: 3rem;
-  visibility: collapse;
-}
-.eventos h1{
- text-align: center;
- text-transform: uppercase;
- padding:  10px 0
-}
-.fecha{
-  border:1px solid #ccc;
-  border-radius: 10px;
+.form-index{
+  background-color: white;
+  padding-top: 15px;
 }
 
-.margen-interno{
+.btn-buscar-1{
+  
+}
+/*================================================================
+ESTILOS DE PAGINAS INTERNAS O DE DETALLE*/
+
+/*fondo de las paginas*/
+/*fondo gris tenue de las paginas de categorias*/
+.fondo-1{
+    background-color: rgb(245, 248, 255);
+}
+/*fondo blanco de las paginas de detalle*/
+.fondo-2{
+    background-color: white;
+}
+/*Imagen principal de el sitio o plan*/
+.img-jumbotron{
+  border-radius: 0%;
+  background-size: cover;
+/* Ubicación de la imagen */
+  background-image: url(../images/muestra.jpg);
+/* Nos aseguramos que la imagen de fondo este centrada vertical y
+  horizontalmente en todo momento */
+  background-position: center center;
+/* La imagen de fondo no se repite */
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 600px;
+}
+.foto-portada{
+    background-color: var(--color3);
+    border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    -webkit-border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1.7em;
+    text-align: center;
+    width: 1.7em;
+}
+/*Boton de otras opciones*/
+.btn-masopcion{
+  border-radius: 100px;
   padding: 5px;
-  border-bottom: 1px solid #000;
 }
-.margen-interno h1{
-  line-height: 50px;
-  padding: 5px;
+/*icono otras opciones*/
+.icon-opciones{
+    background-color: var(--color1);
+    border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    -webkit-border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1.7em;
+    text-align: center;
+    width: 1.7em;
 }
-.margen-interno h4, .margen-interno p,.margen-interno small{
-  margin-bottom: 0;
-}
-/* CATEGORIAS
---------------------------------------------------*/
-.categorias{
-  background-color: #333;
- /* height: 5rem;*/
-  padding: 0.5rem;
-}
-.categorias a{
-  color: #888;
-}
-.categorias a:hover{
-  color: #999;
-}
-.categorias a::before{
-  font-family: "FontAwesome", sans-serif;
-  content: "\f1db";
-}
-.categorias a:active::before{
-  font-family: "FontAwesome", sans-serif;
-  content: "\f111";
-}
-.btn-secondary.active::before, .btn-secondary:active::before, .show>.btn-secondary.dropdown-toggle {
-  font-family: "FontAwesome", sans-serif;
-  content: "\f111";
-}
-.btn-categorias{
-  background-color: #ccc;
-  margin: 0.5rem;
-  border-color: #ccc;
-}
-/*star rating estilo*/
-.rating-md {
-    font-size: 1em !important;
+/*Boton de opciones principales*/
+.btn-botones{
+  padding: 15px;
+  border-radius: 100px;
 }
 
-/* estilos de las imagenes sin comentarios*/
-.portfolio-item{
-  margin-bottom: 30px;
+/*Boton de opciones principales*/
+.btn-principal {
+    border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    -webkit-border-radius: 50%;
+    color: #0091FA;
+    display: inline-block;
+    height: 2.5em;
+    margin-right: 0.1%;
+    text-align: center;
+    width: 2.5em;
+    font-size: 0.9rem;
 }
-/*estilo de las imagenes con comentarios*/
+.espacio-superior{
+  margin-top: 4rem;
+  margin-bottom: auto;
+}
 
-.col-item
-{
-    border: 1px solid #E1E1E1;
+
+.tarjeta-tt {
+    /*border:1px solid #ccc;*/
     border-radius: 5px;
-    background: #FFF;
-    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px rgba(137, 149, 152, 0.28);
+    margin-bottom: 20px;
 }
-.col-item .photo img
-{
-    margin: 0 auto;
-    width: 100%;
+.atras{
+ padding: 30px 21px 15px;
 }
-
-.col-item .info
-{
-    padding: 10px;
-    border-radius: 0 0 5px 5px;
-    margin-top: 1px;
-}
-
-.col-item:hover .info {
-    background-color: #F5F5DC;
-}
-.col-item .price
-{
-    /*width: 50%;*/
-    float: left;
-    margin-top: 5px;
-}
-
-.col-item .price h6
-{
-   /* line-height: 20px;*/
-    margin: 0;
-}
-
-.price-text-color
-{
-    color: #219FD1;
-    font-size: 16px;
-    line-height: 18px;
-    font-style: italic;
-}
-
-.col-item .info .rating
-{
-    color: #777;
-}
-
-.col-item .rating
-{
-    /*width: 50%;*/
-    float: left;
-    font-size: 17px;
-    text-align: right;
-    line-height: 52px;
-    margin-bottom: 10px;
-    height: 52px;
-}
-
-.col-item .separator
-{
-    border-top: 1px solid #E1E1E1;
-}
-
-.clear-left
-{
-    clear: left;
-}
-
-.col-item .separator p
-{
-    line-height: 20px;
-    margin-bottom: 0;
-    margin-top: 10px;
+.bd-pageheader{
+    padding: 0rem 0rem;
+    margin-bottom: 0rem;
+    color: red;
     text-align: center;
 }
 
-.col-item .separator p i
-{
-    margin-right: 5px;
+.color-{
+    background-color: blue;
 }
-.col-item .btn-add
-{
-    width: 50%;
-    float: left;
-}
-
-.col-item .btn-add
-{
-    border-right: 1px solid #E1E1E1;
+.color-2{
+    padding: 7px 7px;
+    background-color: #F1F9FE;
+    border-radius: 6px;
+    margin-bottom: 1rem;
 }
 
-.col-item .btn-details
-{
-    width: 50%;
-    float: left;
-    padding-left: 10px;
+
+/*espacio de margenes para la información de las tarjeticas*/
+
+.espacio-introtarjeta {
+    padding: 0.5rem 0.5rem;
 }
 
-@media (min-width: 768px){
-.flotante{
-  position: absolute;
-  width: 70%;
-  top: 10%;
-  left: 15%;
+.icon-opciones{
+    background-color: var(--color1);
+    border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    -webkit-border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1.7em;
+    text-align: center;
+    width: 1.7em;
 }
-.eventos{
-  visibility: visible;
-  }
+.circulo-md {
+    background-color: var(--color3);
+    border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    -webkit-border-radius: 1.4rem;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 1.7em;
+    text-align: center;
+    width: 1.7em;
+    font-size: 2rem;
+}
+.rotar{
+    transform: rotateZ(-45deg);
+    position: absolute;
+    bottom: 0.5rem;
+}
+.d-rotar{
+    transform: rotateZ(45deg);
+}
+.circulo-sm {
+    background-color: var(--color1);
+    border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    -webkit-border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    /* font-weight: bold; */
+    line-height: 2.7em;
+    /* margin-right: 15px; */
+    text-align: center;
+    width: 2.7em;
+    position: relative;
+    bottom: 1rem;
+}
+.circulo-xs {
+    background-color: var(--color1);
+    font-size: 0.7rem;
+    border-radius: 0.9em;
+    -moz-border-radius: 0.9em;
+    -webkit-border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    /* font-weight: bold; */
+    line-height: 1.7em;
+    /* margin-right: 15px; */
+    text-align: center;
+    width: 1.7em;
+}
+
+.svg-style {
+    position: absolute;
+    /* background-color: antiquewhite; */
+    bottom: 106px;
 }
