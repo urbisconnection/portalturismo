@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>jQuery slide-menu Plugin Demos</title>
+<link rel="stylesheet" href="styles/slide-menu.css">
+<link rel="stylesheet" href="styles/preview.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+</head>
+<body>
+<main role="main">
+  <h1>jQuery slide-menu Plugin Demos</h1>
+  <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+  <h2>Multi-purpose menu (left)</h2>
+  <div class="btn-list">
+    <button type="button" class="btn slide-menu-control" data-target="test-menu-left" data-action="toggle">Toggle Menu</button>
+    <button type="button" class="btn slide-menu-control" data-target="test-menu-left" data-action="open">Open Menu</button>
+    <button type="button" class="btn slide-menu-control" data-target="test-menu-left" data-action="close">Close Menu</button>
+  </div>
+  <h2>Navigation menu (right)</h2>
+  <div class="btn-list">
+    <button type="button" class="btn slide-menu-control" data-target="test-menu-right" data-action="toggle">Toggle Menu</button>
+    <button type="button" class="btn slide-menu-control" data-target="test-menu-right" data-action="open">Open Menu</button>
+    <button type="button" class="btn slide-menu-control" data-target="test-menu-right" data-action="close">Close Menu</button>
+    <button type="button" class="btn slide-menu-control" data-target="test-menu-right" data-action="back">Backward navigation</button>
+  </div>
+</main>
+<nav class="slide-menu" id="test-menu-left">
+  <div class="controls">
+    <button type="button" class="btn slide-menu-control" data-action="close">Close</button>
+  </div>
+  <p>You aren't limited to classical navigation menus.</p>
+  <p>In fact you can put anything you like in the menu</p>
+</nav>
+<nav class="slide-menu" id="test-menu-right">
+  <div class="controls">
+    <button type="button" class="btn slide-menu-control" data-action="close">Close</button>
+    <button type="button" class="btn slide-menu-control" data-action="back">Back</button>
+  </div>
+  <ul>
+    <li><a href="#">Home</a>
+      <ul>
+        <li><a href="#">Submenu entry</a></li>
+        <li><a href="#">Submenu entry</a>
+          <ul>
+            <li><a href="#">Subsubmenu entry</a></li>
+            <li><a href="#" id="special-link-2">Subsubsubmenu entry - I'm special 2!</a></li>
+            <li><a href="#">Subsubmenu entry</a></li>
+            <li><a href="#">Subsubmenu entry</a>
+              <ul>
+                <li><a href="#">Subsubsubmenu entry</a></li>
+                <li><a href="#">Subsubsubmenu entry</a></li>
+                <li><a href="#">Subsubsubmenu entry</a></li>
+                <li id="special-link-3"><a href="#">Subsubsubmenu entry - I'm special 3!</a></li>
+                <li><a href="#">Subsubsubmenu entry</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Subsubmenu entry</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Submenu entry</a></li>
+        <li><a href="#">Submenu entry</a></li>
+        <li><a href="#">Submenu entry</a></li>
+      </ul>
+    </li>
+    <li><a href="#" id="special-link-1">Contact</a></li>
+    <li><a href="#">Services</a>
+      <ul>
+        <li><a href="#">Submenu entry</a></li>
+        <li><a href="#">Submenu entry</a>
+          <ul>
+            <li><a href="#">Subsubmenu entry</a></li>
+            <li><a href="#">Subsubmenu entry</a></li>
+            <li><a href="#">Subsubmenu entry</a></li>
+            <li><a href="#">Subsubmenu entry</a></li>
+            <li><a href="#">Subsubmenu entry</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Submenu entry</a></li>
+        <li><a href="#">Submenu entry</a></li>
+        <li><a href="#">Submenu entry</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<script src="scripts/slide-menu.js"></script><script defer>(function ($) {
+            $(document).ready(function () {
+
+                var menuLeft = $('#test-menu-left').slideMenu({
+                    position: 'left',
+                    submenuLinkAfter: ' >',
+                    backLinkBefore: '< '
+                });
+
+                var menuRight = $('#test-menu-right').slideMenu({
+                    submenuLinkAfter: ' ⇒',
+                    backLinkBefore: '⇐ '
+                });
+
+                if ($(window).width() > 767) {
+                    menuRight.open(false);
+                }
+
+            });
+        })(jQuery);</script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
