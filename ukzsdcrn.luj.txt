@@ -1,0 +1,109 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/.babelrc
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/.bowerrc
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/.editorconfig
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/.gitattributes
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/README.md
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/bower.json
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/dist/index.html
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/dist/scripts/slide-menu.js
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/dist/scripts/slide-menu.min.js
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/dist/styles/preview.css
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/dist/styles/preview.min.css
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/dist/styles/slide-menu.css
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/dist/styles/slide-menu.min.css
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/gulpfile.js
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/package-lock.json
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/package.json
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/src/prueba-slider.html
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/src/scripts/slide-menu.js
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/src/styles/preview.scss
+#	modified:   Multi-level-Side-Menu-Plugin-jQuery/src/styles/slide-menu.scss
+#	modified:   administracion/adminusera.html
+#	modified:   compartir.html
+#	modified:   configurables/habitacion.html
+#	modified:   configurables/max-detalle.html
+#	modified:   configurables/plato.html
+#	modified:   css/bootstrap.css
+#	modified:   css/bootstrap.min.css
+#	modified:   css/preview.css
+#	modified:   css/preview.min.css
+#	modified:   css/slide-menu.css
+#	modified:   css/slide-menu.min.css
+#	deleted:    "detalles/<div class=\"checkbox\" id=\"myCheckbox\">"
+#	deleted:    "detalles/<script src=\"https:::code.jquery.com:jquery-3.2.1."
+#	modified:   detalles/detalle-alojamiento.html
+#	modified:   detalles/detalle-bar.html
+#	modified:   detalles/detalle-restaurante.html
+#	modified:   detalles/detalle-rumba.html
+#	modified:   fonts/glyphicons-halflings-regular.eot
+#	modified:   fonts/glyphicons-halflings-regular.svg
+#	modified:   fonts/glyphicons-halflings-regular.ttf
+#	modified:   fonts/glyphicons-halflings-regular.woff
+#	modified:   fonts/glyphicons-halflings-regular.woff2
+#	modified:   formulario-a.html
+#	modified:   images/Thumbs.db
+#	modified:   images/img.png
+#	modified:   intro.html
+#	modified:   js/jquery-rr.easing.min.js
+#	modified:   js/popper.js
+#	modified:   js/popper.min.js
+#	modified:   js/slide-menu.js
+#	modified:   js/slide-menu.min.js
+#	modified:   login.html
+#	modified:   prosesos-de-compra/aprobado.html
+#	modified:   prosesos-de-compra/compra-2.html
+#	modified:   prosesos-de-compra/compra.html
+#	modified:   prosesos-de-compra/detalle-compra.html
+#	modified:   prueba-slider.html
+#	modified:   reserva-restaurante.html
+#	modified:   restaurante-3d.html
+#	modified:   vendor/font-awesome/HELP-US-OUT.txt
+#	modified:   vendor/font-awesome/css/font-awesome.css
+#	modified:   vendor/font-awesome/css/font-awesome.min.css
+#	modified:   vendor/font-awesome/fonts/FontAwesome.otf
+#	modified:   vendor/font-awesome/fonts/fontawesome-webfont.eot
+#	modified:   vendor/font-awesome/fonts/fontawesome-webfont.svg
+#	modified:   vendor/font-awesome/fonts/fontawesome-webfont.ttf
+#	modified:   vendor/font-awesome/fonts/fontawesome-webfont.woff
+#	modified:   vendor/font-awesome/fonts/fontawesome-webfont.woff2
+#	modified:   vendor/font-awesome/less/animated.less
+#	modified:   vendor/font-awesome/less/bordered-pulled.less
+#	modified:   vendor/font-awesome/less/core.less
+#	modified:   vendor/font-awesome/less/fixed-width.less
+#	modified:   vendor/font-awesome/less/font-awesome.less
+#	modified:   vendor/font-awesome/less/icons.less
+#	modified:   vendor/font-awesome/less/larger.less
+#	modified:   vendor/font-awesome/less/list.less
+#	modified:   vendor/font-awesome/less/mixins.less
+#	modified:   vendor/font-awesome/less/path.less
+#	modified:   vendor/font-awesome/less/rotated-flipped.less
+#	modified:   vendor/font-awesome/less/screen-reader.less
+#	modified:   vendor/font-awesome/less/stacked.less
+#	modified:   vendor/font-awesome/less/variables.less
+#	modified:   vendor/font-awesome/scss/_animated.scss
+#	modified:   vendor/font-awesome/scss/_bordered-pulled.scss
+#	modified:   vendor/font-awesome/scss/_core.scss
+#	modified:   vendor/font-awesome/scss/_fixed-width.scss
+#	modified:   vendor/font-awesome/scss/_icons.scss
+#	modified:   vendor/font-awesome/scss/_larger.scss
+#	modified:   vendor/font-awesome/scss/_list.scss
+#	modified:   vendor/font-awesome/scss/_mixins.scss
+#	modified:   vendor/font-awesome/scss/_path.scss
+#	modified:   vendor/font-awesome/scss/_rotated-flipped.scss
+#	modified:   vendor/font-awesome/scss/_screen-reader.scss
+#	modified:   vendor/font-awesome/scss/_stacked.scss
+#	modified:   vendor/font-awesome/scss/_variables.scss
+#	modified:   vendor/font-awesome/scss/font-awesome.scss
+#	modified:   vendor/jquery/jquery.js
+#	modified:   vendor/jquery/jquery.min.js
+#	modified:   vendor/tether/tether.js
+#	modified:   vendor/tether/tether.min.js
+#
+
