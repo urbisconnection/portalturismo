@@ -611,7 +611,55 @@ header.masthead {
     text-shadow: 1px 1px 5px black;
 }
 
+/*carousel de imagenes o cinta de imagenes*/
+#carrusel{
+    float:left;
+    width:100%;
+    overflow:hidden;
+    height:130px;
+    position:relative;
+}
+#carrusel .izquierda_flecha{
+    position:absolute;
+    left:10px;
+    z-index:1;
+    top:40%;
+    margin-top:-9px;
+}
+#carrusel .derecha_flecha{
+    position:absolute;
+    right:10px;
+    z-index:1;
+    top:40%;
+    margin-top:-9px;
+}
+.carrusel{
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0
+}
+.carrusel>div{
+    float: left;
+    height: 90px;
+    margin-right: 5px;
+    width: 106px;
+    text-align:center;
+}
+.carrusel .img_carrusel{
+    cursor:pointer;
+}
 
+#content {
+    float:left;
+    width:600px;
+    margin-bottom:40px;
+    margin:0px auto;
+}
+
+.product {
+   /* border:#f2f2f2 1px solid;*/
+}
 
     /*========================================*/
     /*.av-share-link-description {
@@ -749,13 +797,44 @@ ESTILOS DE PAGINAS INTERNAS O DE DETALLE*/
     }
     /*Boton de opciones principales*/
     /*medio*/
-    .btn-tm-tt-xs{
-    width: 1.5em;
-    height: 1.5em;
+      
+    .btn-opcion-bloque-tt{
+    width: 1.8em;
+    height: 1.8em;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: .15rem 0.1rem;
+    margin: 0rem 1rem 0rem 0rem;
+    border-radius: 50%;
+    }
+    .btn-tm-tt-mxs{
+    width: 1.8em;
+    height: 1.8em;
     font-size: 0.9rem;
-    line-height: 0.6rem;
+    line-height: 1.3rem;
+    padding: .15rem 0.1rem;
+    margin-bottom: .5rem;
+    }
+    .btn-tm-tt-xs{
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
     padding: .15rem 0.2rem;
     margin-bottom: .5rem;
+    }
+    .btn-tm-tt-xs-verde{
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    padding: .15rem 0.1rem;
+    margin-bottom: .5rem;
+    
+    border-color: var(--color1);
+    }
+    .btn-tm-tt-xs-verde i{
+    color: var(--color1);
     }
     .btn-tm-md {
         width: 2.5em;
@@ -967,6 +1046,11 @@ ESTILOS DE PAGINAS INTERNAS O DE DETALLE*/
     }
     .precio {
         color: var(--color4);
+    }
+    .iconos-datos{
+        margin-left: 5px;
+        margin-right: 5px;
+        color: var(--color1);
     }
     /* ============cartamenu===============*/
     .ingredientes {
@@ -1248,6 +1332,16 @@ ESTILOS DE PAGINAS INTERNAS O DE DETALLE*/
 .casilla-opcion{
     font-size: .8rem;
     padding: 5px 1px;
+}
+/*parrafopequeño para información minima*/
+.parrafo-especial-tt p{
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+
+.img-pubicity-right {
+    margin-right: 0px;
+    height: 190px;
 }
 /*====primer media===================================*/
 @media (min-width: 992px){
